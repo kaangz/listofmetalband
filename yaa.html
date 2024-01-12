@@ -1,0 +1,67 @@
+<html>
+<head>
+<style>
+	body {
+	background-image:url('img/graveyard.jpg');
+	}
+</style>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="img/css/w3.css">
+</head>
+<body>
+<div class="w3-container">
+ <center>
+ <style>
+    .w3-container h2 {
+        color: black;
+            font-size: 2em; 
+            font-weight: bold;
+            text-align: center; 
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            text-transform: uppercase; 
+            letter-spacing: 2px;
+    }
+</style>
+ <h2><b>List Of Best Metal Band</b></h2>
+</div>
+<center>
+<div class="w3-bar w3-black" >
+ <button class="w3-bar-item w3-button " onclick="openKota('Slipknot')">Slipknot</button>
+  <button class="w3-bar-item w3-button" onclick="openKota('Architects')">Architects</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Wage War')">Wage War</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('As I Lay Dying')">As I Lay Dying</button>
+
+  
+ 
+</div>
+<div id="Slipknot" class="w3-container kota w3-animate-zoom" style="display:none">
+ <h2 class="w3-center">Slipknot</h2>
+ <img src="img/slipknot.jpg"></img>
+ 
+ 
+</div>
+<div id="Architects" class="w3-container kota w3-animate-top" style="display:none">
+ <h2 class="w3-center">Architects</h2>
+ <img src="img/architects.jpg"></img>
+</div>
+<div id="Wage War" class="w3-container kota w3-animate-right" style="display:none">
+ <h2 class="w3-center">Wage War</h2>
+ <img src="img/wg.jpg"></img>
+</div>
+<div id="As I Lay Dying" class="w3-container kota w3-animate-left" style="display:none">
+ <h2 class="w3-center">As I Lay Dying</h2>
+ <img src="img/as.jpg"></img>
+</div>
+<script>
+function openKota(namakota) {
+ var i;
+ var x = document.getElementsByClassName("kota");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none";
+ }
+ document.getElementById(namakota).style.display = "block";
+}
+</script>
+</body>
+</html>
